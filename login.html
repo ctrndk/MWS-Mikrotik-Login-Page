@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <title>.:: MIPHA WiFi SCHOOL ::.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WELCOME TO MIPHA WIFI SCHOOL GATE" />
+    <meta name="keywords" content="mipha,wifi,digital,school,vocational" />
+    <meta content="Mas Dik" name="author" />
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css" />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarCollapse">
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+      <input type="hidden" name="username" />
+      <input type="hidden" name="password" />
+      <input type="hidden" name="dst" value="$(link-orig)" />
+      <input type="hidden" name="popup" value="true" />
+    </form>
+    <script type="text/javascript" src="md5.js"></script>
+    <script type="text/javascript">
+    <!--
+        function doLogin() {
+      document.sendin.username.value = document.login.username.value;
+      document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+      document.sendin.submit();
+      return false;
+        }
+    //-->
+    </script>
+    $(endif)
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand logo text-uppercase" href="">
+                <img src="images/logo-dark.png" alt="" height="22">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+
+                    <li class="nav-item">
+                        <a href="#beranda" class="nav-link smoothlink">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mediasosial" class="nav-link smoothlink">Media Informasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link smoothlink">Tim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothlink">Hubungi kami</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav navbar-center">
+                </ul>
+                <div class="navbar-button d-none d-lg-inline-block">
+                    <a href="#login" class="btn btn-sm btn-soft-primary btn-round">Masuk Jaringan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="bg-home bg-light" id="beranda">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="home-content mt-4">
+                                <p class="mb-0">Mipha Digital School</p>
+                                <img src="images/home-border.png" height="15" alt="">
+                                <h1 class="home-title mt-4">Nikmati <br> Internet Cepat & Stabil</h1>
+                                <p class="text-muted mt-4 f-20">Maksimalkan potensi melalui teknologi!</p>
+                                <div class="mt-4 pt-2">
+                                    <a href="#mws" class="btn btn-primary mr-3">Mipha WiFi School</a>
+                                <!--<a href="https://www.youtube.com/watch?v=12L2MEshq_c" class="video-play-icon text-dark">
+                                        <i class="mdi mdi-play-circle-outline text-dark mr-2"></i>Tonton Tutorial
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-5 offset-lg-1" id="login">
+                            <div class="home-registration-form bg-white p-5 mt-4">
+                                <h5 class="form-title mb-4 text-center font-weight-bold">Masuk ke Jaringan!</h5>
+
+                                <form name="sendin" id="loginForm" action="$(link-login-only)" method="post" class="registration-form">
+
+
+                                  <div class="form-group">
+                                    $(if error)
+                                      <strong>Terjadi kesalahan : </strong><i class="text-danger">$(error)</i>
+                                    $(endif)
+                                  </div>
+                                    <input type="hidden" name="dst" value="$(link-orig)"/>
+                                    <input type="hidden" name="popup" value="true"/>
+                                    <label class="text-muted">Username</label>
+                                    <input type="text" name="username" id="username" autofocus="on" value="$(username)" class="form-control mb-4 registration-input-box">
+                                    <label class="text-muted">Password</label>
+                                    <input type="password" id="inputPassword" class="form-control mb-4 registration-input-box">
+                                    <button type="submit" name="submit" class="btn btn-primary w-100">Masuk Sekarang</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section bg-services" id="mediasosial">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-heading mt-4">Official Sosial Media</h3>
+                        <p class="text-muted f-17 mt-3">Dapatkan informasi penting dari sekolahan <br> dengan mengikuti media sosial dibawah ini.</p>
+
+                        <img src="images/home-border.png" height="15" class="mt-3" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3 col-lg-3">
+                    <div class="services-box p-4 mt-4">
+                        <div class="services-icon bg-soft-primary">
+                            <i class="mdi mdi-web text-primary"></i>
+                        </div>
+
+                        <h5 class="mt-4">Website</h5>
+                        <p class="text-muted mt-3"></p>
+
+                        <div class="mt-3">
+                            <a href="https://smkmiphaparakan.sch.id" target="_blank" class="text-primary f-16">Buka <i class="mdi mdi-arrow-right ml-1"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-3 col-lg-3">
+                    <div class="services-box p-4 mt-4">
+                        <div class="services-icon bg-soft-primary">
+                            <i class="mdi mdi-instagram text-primary"></i>
+                        </div>
+
+                        <h5 class="mt-4">Instagram</h5>
+                        <p class="text-muted mt-3"></p>
+
+                        <div class="mt-3">
+                            <a href="https://www.instagram.com/smkbhumiphalaparakan" target="_blank" class="text-primary f-16">Buka <i class="mdi mdi-arrow-right ml-1"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-3 col-lg-3">
+                    <div class="services-box p-4 mt-4">
+                        <div class="services-icon bg-soft-primary">
+                            <i class="mdi mdi-youtube text-primary"></i>
+                        </div>
+
+                        <h5 class="mt-4">Youtube</h5>
+                        <p class="text-muted mt-3"></p>
+
+                        <div class="mt-3">
+                            <a href="https://www.youtube.com/channel/UC8AvG88_Rhat8XJE39Mf-6Q" target="_blank" class="text-primary f-16">Buka <i class="mdi mdi-arrow-right ml-1"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-3 col-lg-3">
+                    <div class="services-box p-4 mt-4">
+                        <div class="services-icon bg-soft-primary">
+                            <i class="mdi mdi-cellphone text-primary"></i>
+                        </div>
+
+                        <h5 class="mt-4">TikTok</h5>
+                        <p class="text-muted mt-3"></p>
+
+                        <div class="mt-3">
+                            <a href="https://www.tiktok.com/@miphamoncer" target="_blank" class="text-primary f-16">Buka <i class="mdi mdi-arrow-right ml-1"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-5 pt-4" id="counter">
+                <div class="col-lg-6">
+                    <div class="pr-4 mt-4">
+                        <p class="text-uppercase">Catatan Kecil </p>
+                        <h3>Tingkatkan Kreatifitasmu!</h3>
+
+                        <p class="text-muted mt-3">Dengan adanya MIPHA WIFI SCHOOL kami selaku tim pengembang sekolah berharap pembelajaran ke depan bisa lebih mudah.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light bg-features">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="mt-4 home-img">
+                        <div class="animation-2"></div>
+                        <div class="animation-3"></div>
+                        <img src="images/features/img-1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6" id="mws">
+                    <div class="mt-4 home-img">
+                        <img src="images/features/mwss.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section pt-0" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-heading mt-4">Binggung siapa TIM IT nya? </h3>
+                        <p class="text-muted f-17 mt-3">Yuk simak informasi dibawah!</p>
+
+                        <img src="images/home-border.png" height="15" class="mt-3" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4">
+                <div class="col-lg-12">
+                    <div class="team-carousel">
+                        <div class="team-box p-3">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <h5 class="mt-2">Pa Catra</h5>
+                                        <p class="team-badge bg-primary text-white rounded f-14 mt-2">#masdik</p>
+                                        <p class="text-muted mt-3">Bijak berselancar!.</p>
+
+                                        <div class="team-social mt-4 pt-2">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-google"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-instagram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <img src="images/users/usr1.png" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-box p-3">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <h5 class="mt-2">Pa Charis</h5>
+                                        <p class="team-badge bg-primary text-white rounded f-14 mt-2">#SiPenyuGunung</p>
+                                        <p class="text-muted mt-3">Yahahahaayuuuuu.</p>
+
+                                        <div class="team-social mt-4 pt-2">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-google"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-instagram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <img src="images/users/usr2.png" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-box p-3">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <h5 class="mt-2">Pa Munir</h5>
+                                        <p class="team-badge bg-primary text-white rounded f-14 mt-2">#slebew</p>
+                                        <p class="text-muted mt-3">Nakal? Blacklist!.</p>
+
+                                        <div class="team-social mt-4 pt-2">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-google"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-instagram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <img src="images/users/usr3.png" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-box p-3">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <h5 class="mt-2">Pa Masrur </h5>
+                                        <p class="team-badge bg-primary text-white rounded f-14 mt-2">#yayung</p>
+                                        <p class="text-muted mt-3">Nakal ku bened dr dapodik.</p>
+
+                                        <div class="team-social mt-4 pt-2">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-google"></i></a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="text-reset"><i class="mdi mdi-instagram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mt-4">
+                                        <img src="images/users/usr4.png" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <h2>Belum Punya <span class="text-primary">Akun WiFi?</span></h2>
+                        <p class="text-muted mt-3">Silahkan hubungi TIM IT Sekolahan untuk mendaftarkan ponsel pintar anda, supaya dapat terhubung ke jaringan sekolahan.</p>
+
+                        <div class="mt-4 pt-2">
+                            <a href="mailto:catra@mipha.id" class="btn btn-soft-primary btn-round mr-3 btn-rounded">Via Email</a>
+                            <a href="#" class="btn btn-primary btn-round btn-rounded">Via Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-heading mt-4">Mari Ngobrol tentang teknologi</h3>
+                        <p class="text-muted f-17 mt-3">Jika ada yang ingin ditanyakan silahkan hubungi kami melalui tombol dibawah ini.</p>
+                        <center><a href="https://api.whatsapp.com/send?phone=6285899455104&text=Permisi%20Pa%20Catraaaa,%20Saya%20Baru%20saja%20membuka%20login%20page%20WiFi.%20Bisakah%20saya%20tanya-tanya?" class="btn btn-success btn-round btn-rounded">Hubungi</a></center>
+                        <img src="images/home-border.png" height="15" class="mt-3" alt="">
+
+                    </div>
+
+                            
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4">
+                <div class="col-lg-12">
+                    <div class="mt-4 home-img text-center">
+                        <div class="animation-2"></div>
+                        <div class="animation-3"></div>
+                        <img src="images/features/img-3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section bg-light bg-footer pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info mt-4">
+                        <img src="images/logo-dark.png" alt="" height="22">
+                        <p class="text-muted mt-4 mb-2">Maksimalkan Potensi melalui Teknologi.</p>
+                        <div class="team-social mt-4 pt-2">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-reset"><i class="mdi mdi-google"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row  pl-0 md-lg-5">
+                        <div class="col-lg-6">
+                            <div class="mt-4">
+                                <h5 class="f-20">Link cepat</h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="https://smkmiphaparakan.sch.id/">Website Sekolah</a></li>
+                                    <li><a href="https://absen.ujian-smkmiphaparakan.net/cekpresensi.php">Cek Kehadiran</a></li>
+                                    <li><a href="https://poin.smkmiphaparakan.sch.id/payment">Cek Pembayaran</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="text-muted mb-0">Copyright © 2023 MIT25 - Coded By <a href="https://github.com/ctrndk">Mas Dik</a></p>
+      
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/contact.init.js"></script>
+    <script src="js/counter.init.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+    $(if chap-id)
+    <script type="text/javascript" src="md5.js"></script>
+    <script type="text/javascript">
+        $('#loginForm').submit(function () {
+            var password = $('#inputPassword');
+            password.val(hexMD5('$(chap-id)' + password.val() + '$(chap-challenge)'));
+        });
+    </script>
+    $(endif)
+    <script>
+      $("#menu-toggle").click(function (e) {
+          e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+</body>
+</html>
